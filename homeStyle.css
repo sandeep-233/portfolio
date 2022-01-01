@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("308403.jpg") no-repeat;
+    background-size: cover;
+}
+.container {
+    width: 100%;
+    height: 68%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 13, 13, 0.486);
+}
+.container .leftbox {
+    /* border: 2px solid; */
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container .leftbox .img-box {
+    border: 6px solid mediumpurple;
+    width: 60%;
+    height: 65%;
+    border-radius: 100%;
+    border-right: none;
+    border-bottom: none;
+    padding: 2px;
+}
+.container .leftbox .img-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.container .rightbox {
+    /* border: 2px solid; */
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    color: whitesmoke;
+}
+.container .rightbox .about{
+    text-align: start;
+    font-size: larger;
+}
+.container .rightbox .buttons {
+    width: 60%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .rightbox .buttons .top-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 3px 0;
+}
+.container .rightbox .buttons .top-buttons button{
+    width: 90px;
+    padding: 6px;
+    background-color: rgba(164, 129, 235, 0.616);
+    border: none;
+    border-radius: 5px;
+}
+.container .rightbox .buttons .top-buttons button a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.container .rightbox .buttons .bottom-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 3px 0;
+}
+.container .rightbox .buttons .bottom-buttons button{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 6px;
+    background-color: rgba(164, 129, 235, 0.616);
+    border: none;
+    border-radius: 5px;
+}
+.container .rightbox .buttons .bottom-buttons button a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+#hide-buttons{
+    background: none;
+    border: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+    .container .leftbox .img-box {
+        width: 100%;
+    }
+    .container .rightbox .buttons {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 725px) {
+    
+    .container .leftbox .img-box {
+        width: 100%;
+        height: 48%;
+    }
+   .container .rightbox .about {
+        font-size: large;
+        text-align: center;
+    }
+    .container .rightbox .buttons {
+        width: 100%;
+    }
+    .container .rightbox .buttons .top-buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+    .container .rightbox .buttons .top-buttons button {
+        margin: 12px 0;
+    }
+    .container .rightbox .buttons .bottom-buttons {
+        flex-direction: column;
+    }
+    .container .rightbox .buttons .bottom-buttons button {
+        margin: 12px 0;
+    }
+ }
+
+ @media screen and (max-width: 400px) {
+     
+    .container {
+        flex-direction: column;
+        position: relative;
+        height: 75%;
+    }
+    .container .leftbox .img-box {
+        width: 97%;
+        height: 100%;
+    }
+ }

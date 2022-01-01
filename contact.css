@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(308403.jpg) no-repeat;
+    background-size: cover;
+    
+}
+.container {
+    width: 100%;
+    height: 68%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 13, 13, 0.486);
+}
+.container .contact-content {
+    width: 75%;
+    height: 80%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.container .contact-content .left-box {
+    /* border: 1px solid mediumpurple; */
+    margin-right: 12px;
+}
+.container .contact-content .left-box ul {
+    display: flex;
+    list-style: none;
+}
+.container .contact-content .left-box ul li {
+    margin: 8px 9px;
+}
+.container .contact-content .left-box h3 a {
+    font-size: small;
+    color: lightslategray;
+    font-weight: normal;
+}
+.container .contact-content .right-box {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.container .contact-content .right-box input {
+    background: none;
+    padding: 3px;
+    border-radius: 10px;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 12px;
+}
+.container .contact-content .right-box textarea {
+    background: none;
+    padding: 3px;
+    border-radius: 10px;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 12px;
+}
+.container .contact-content .right-box button {
+    background: #9370dbb8;
+    padding: 3px;
+    border-radius: 10px;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 12px;
+    font-weight: bold;
+    width: fit-content;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* border: 2px solid; */
+}
+.buttons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 12px;
+    list-style: none;
+}
+.buttons ul li button {
+    background: mediumpurple;
+    text-align: center;
+    width: 9em;
+    padding: 3px;
+    border: none;
+    border-radius: 10%;
+    margin: 0 12px;
+}
+.buttons ul li button a {
+    color: black;
+    text-decoration: none;
+}

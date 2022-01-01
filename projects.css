@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(308403.jpg) no-repeat;
+    background-size: cover;
+    
+}
+.container {
+    width: 100%;
+    height: 75%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 13, 13, 0.486);
+}
+.container .projects-content {
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+    margin-top: 12px;
+}
+.container .projects-content .project-img {
+    width: 75%;
+    height: 9em;
+    /* border: 1px solid white; */
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.541); */
+}
+.container .projects-content .project-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 9%;
+    border: 3px solid mediumpurple;
+    border-left: navajowhite;
+    border-right: none;
+}
+.container .projects-content .project-img .project-details {
+    color: white;
+    font-size: medium;
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    height: 6em;
+    /* border: 2px solid; */
+    bottom: 15%;
+    left: 60%;
+    background: #66339994;
+    overflow: hidden;
+    padding: 2px;
+    border-radius: 9px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* border: 2px solid; */
+}
+.buttons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 12px;
+    list-style: none;
+}
+.buttons ul li button {
+    background: mediumpurple;
+    text-align: center;
+    width: 9em;
+    padding: 3px;
+    border: none;
+    border-radius: 10%;
+    margin: 0 12px;
+}
+.buttons ul li button a {
+    color: black;
+    text-decoration: none;
+}
